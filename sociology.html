@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociology Dept - Mohonpur Govt College</title>
+    <style>
+        :root { --primary: #065f46; --accent: #f59e0b; --light: #f0fdf4; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f9fafb; color: #1f2937; }
+
+        /* Header Section */
+        header { background: var(--primary); color: white; padding: 40px 5%; text-align: center; border-bottom: 5px solid var(--accent); }
+        .dept-name { font-size: 45px; font-weight: 800; margin: 0; letter-spacing: 1px; }
+        .college-name { font-size: 22px; font-weight: 400; opacity: 0.9; margin-top: 5px; }
+
+        /* Navigation */
+        nav { background: white; display: flex; justify-content: center; gap: 20px; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        nav a { text-decoration: none; color: var(--primary); font-weight: 600; padding: 8px 15px; border-radius: 5px; transition: 0.3s; }
+        nav a:hover { background: var(--primary); color: white; }
+
+        /* Hero Image/Banner Area */
+        .banner { height: 200px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1523050335392-9affa74000b1?w=1000'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-style: italic; }
+
+        /* Options Grid */
+        .container { padding: 40px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .option-card { background: white; padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #e5e7eb; transition: 0.3s; cursor: pointer; }
+        .option-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-color: var(--primary); }
+        .icon { font-size: 40px; margin-bottom: 15px; display: block; }
+        h3 { font-size: 24px; color: var(--primary); margin: 10px 0; }
+        p { color: #6b7280; font-size: 14px; }
+
+        /* Footer */
+        footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="dept-name">Department of Sociology</h1>
+        <div class="college-name">Mohonpur Government College</div>
+    </header>
+
+    <nav>
+        <a href="#notice">Home</a>
+        <a href="#assignment">Assignment</a>
+        <a href="#notice">Notice Board</a>
+        <a href="#exam">Exam Schedule</a>
+        <a href="#profile">Faculty</a>
+    </nav>
+
+    <div class="banner">
+        "Knowledge is power, but sociology is understanding that power."
+    </div>
+
+    <div class="container">
+        <div class="option-card" onclick="alert('Assignment List Opening...')">
+            <span class="icon">📝</span>
+            <h3>Assignment</h3>
+            <p>Download your weekly assignments and submission guidelines.</p>
+        </div>
+
+        <div class="option-card" onclick="alert('Notice Board Opening...')">
+            <span class="icon">📢</span>
+            <h3>Notice Board</h3>
+            <p>Stay updated with the latest news from the department.</p>
+        </div>
+
+        <div class="option-card" onclick="alert('Exam Schedule Opening...')">
+            <span class="icon">🎓</span>
+            <h3>Examination</h3>
+            <p>Check your exam dates, seat plans, and results here.</p>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        &copy; 2026 Department of Sociology | Mohonpur Govt College | Developed by Jahid
+    </footer>
+
+</body>
+</html>
